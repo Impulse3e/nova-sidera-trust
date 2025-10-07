@@ -1,3 +1,5 @@
+import payeerLogo from "@/assets/payeer-logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -61,7 +63,10 @@ const Footer = () => {
           <div className="pt-8 border-t border-background/20">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/70">
               <p>© {currentYear} SafeNet / Nova Sidera. Все права защищены.</p>
-              <p>Платёжный интегратор: Payeer</p>
+              <div className="flex items-center gap-2">
+                <span>Платёжный интегратор:</span>
+                <img src={payeerLogo} alt="Payeer" className="h-5 w-auto" />
+              </div>
             </div>
           </div>
         </div>
