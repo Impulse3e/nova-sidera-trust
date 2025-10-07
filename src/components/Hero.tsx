@@ -42,9 +42,14 @@ const Hero = () => {
             <div className="inline-block bg-card border border-border rounded-lg px-6 py-3 mt-8">
               <p className="text-sm text-muted-foreground">
                 Работает на любом устройстве:{" "}
-                <span className="font-semibold text-foreground hover:text-primary transition-colors cursor-not-allowed opacity-50">
+                <a 
+                  href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.exe" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-semibold text-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+                >
                   Windows
-                </span>
+                </a>
                 {", "}
                 <a 
                   href="https://apps.apple.com/ru/app/v2raytun/id6476628951" 
