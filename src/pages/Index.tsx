@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ValueProposition from "@/components/ValueProposition";
 import Features from "@/components/Features";
+import DownloadLinks from "@/components/DownloadLinks";
 import Pricing from "@/components/Pricing";
 import HowItWorks from "@/components/HowItWorks";
 import BlagoCommunity from "@/components/BlagoCommunity";
@@ -40,6 +41,7 @@ const Index = () => {
         <Hero />
         <ValueProposition />
         <Features />
+        <DownloadLinks />
         <Pricing />
         <HowItWorks />
         <BlagoCommunity />

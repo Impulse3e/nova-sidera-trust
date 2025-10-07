@@ -42,7 +42,7 @@ const Download = () => {
       version: "v2.1.0",
       requirements: "Windows 10/11",
       image: windowsApp,
-      downloadUrl: "#",
+      downloadUrl: "https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.exe",
       size: "85 МБ"
     },
     {
