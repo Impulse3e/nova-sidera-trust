@@ -1,15 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out px-4">
+      <div className={`container mx-auto transition-all duration-500 ease-in-out ${
+        isScrolled 
+          ? "mt-4 rounded-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90 shadow-lg border border-border" 
+          : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border"
+      }`}>
+        <div className={`flex items-center justify-between transition-all duration-500 ${
+          isScrolled ? "h-14 px-4" : "h-16"
+        }`}>
           <Link to="/" className="flex items-center gap-2 text-xl font-bold text-foreground hover:opacity-80 transition-opacity">
             Nova Sidera
           </Link>
