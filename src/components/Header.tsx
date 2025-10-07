@@ -35,7 +35,7 @@ const Header = () => {
             <Link to="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Цены
             </Link>
-            <Link to="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Функции
             </Link>
             <Link to="/download" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -43,9 +43,6 @@ const Header = () => {
             </Link>
             <Link to="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               FAQ
-            </Link>
-            <Link to="/#community" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Сообщество
             </Link>
           </nav>
 
@@ -74,7 +71,7 @@ const Header = () => {
               <Link to="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Цены
               </Link>
-              <Link to="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Функции
               </Link>
               <Link to="/download" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -82,9 +79,6 @@ const Header = () => {
               </Link>
               <Link to="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 FAQ
-              </Link>
-              <Link to="/#community" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Сообщество
               </Link>
               <Button variant="ghost" size="sm" className="justify-start">
                 Вход
