@@ -32,18 +32,18 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link to="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Цены
-            </Link>
-            <Link to="/#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            </a>
+            <a href="#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Функции
-            </Link>
+            </a>
             <Link to="/download" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Загрузить приложение
             </Link>
-            <Link to="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               FAQ
-            </Link>
+            </a>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
@@ -68,18 +68,18 @@ const Header = () => {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <Link to="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Цены
-              </Link>
-              <Link to="/#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              </a>
+              <a href="#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Функции
-              </Link>
+              </a>
               <Link to="/download" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Загрузить приложение
               </Link>
-              <Link to="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 FAQ
-              </Link>
+              </a>
               <Button variant="ghost" size="sm" className="justify-start">
                 Вход
               </Button>
