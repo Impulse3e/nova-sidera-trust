@@ -5,7 +5,7 @@ import heroIllustration from "@/assets/hero-illustration.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-background overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-background overflow-hidden pt-16">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(14,165,233,0.1),transparent)]" />
       
       <div className="container px-4 py-20 relative z-10">
@@ -41,7 +41,37 @@ const Hero = () => {
             
             <div className="inline-block bg-card border border-border rounded-lg px-6 py-3 mt-8">
               <p className="text-sm text-muted-foreground">
-                Работает на любом устройстве: <span className="font-semibold text-foreground">Windows, macOS, iOS, Android</span>
+                Работает на любом устройстве:{" "}
+                <span className="font-semibold text-foreground hover:text-primary transition-colors cursor-not-allowed opacity-50">
+                  Windows
+                </span>
+                {", "}
+                <a 
+                  href="https://apps.apple.com/ru/app/v2raytun/id6476628951" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-semibold text-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+                >
+                  macOS
+                </a>
+                {", "}
+                <a 
+                  href="https://apps.apple.com/ru/app/v2raytun/id6476628951" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-semibold text-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+                >
+                  iOS
+                </a>
+                {", "}
+                <a 
+                  href="https://play.google.com/store/apps/details?id=app.hiddify.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-semibold text-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+                >
+                  Android
+                </a>
               </p>
             </div>
           </div>

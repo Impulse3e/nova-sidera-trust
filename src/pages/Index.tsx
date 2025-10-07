@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ValueProposition from "@/components/ValueProposition";
 import Features from "@/components/Features";
@@ -34,6 +35,7 @@ const Index = () => {
         <meta name="twitter:description" content="Защита данных, устойчивый доступ к Telegram и Web3-инструментам" />
       </Helmet>
       
+      <Header />
       <main>
         <Hero />
         <ValueProposition />

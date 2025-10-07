@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { Apple, Smartphone, Monitor, Laptop, ArrowLeft, Download as DownloadIcon } from "lucide-react";
+import { Apple, Smartphone, Monitor, Laptop, Download as DownloadIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import iosApp from "@/assets/ios-app.jpg";
 import androidApp from "@/assets/android-app.jpg";
@@ -19,7 +20,7 @@ const Download = () => {
       version: "v2.1.0",
       requirements: "iOS 13.0 или новее",
       image: iosApp,
-      downloadUrl: "#",
+      downloadUrl: "https://apps.apple.com/ru/app/v2raytun/id6476628951",
       size: "45 МБ"
     },
     {
@@ -30,7 +31,7 @@ const Download = () => {
       version: "v2.1.0",
       requirements: "Android 8.0 или новее",
       image: androidApp,
-      downloadUrl: "#",
+      downloadUrl: "https://play.google.com/store/apps/details?id=app.hiddify.com",
       size: "38 МБ"
     },
     {
@@ -52,7 +53,7 @@ const Download = () => {
       version: "v2.1.0",
       requirements: "macOS 11.0 или новее",
       image: macosApp,
-      downloadUrl: "#",
+      downloadUrl: "https://apps.apple.com/ru/app/v2raytun/id6476628951",
       size: "92 МБ"
     }
   ];
@@ -71,22 +72,8 @@ const Download = () => {
         <meta name="twitter:description" content="Загрузите Nova Sidera VPN для iOS, Android, Windows и macOS." />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-b from-dark via-dark/95 to-background">
-        {/* Header */}
-        <header className="border-b border-white/10 bg-dark/50 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <Link to="/" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
-                <ArrowLeft className="w-5 h-5" />
-                <span className="font-semibold">Nova Sidera</span>
-              </Link>
-              <Link to="/">
-                <Button variant="outline">На главную</Button>
-              </Link>
-            </div>
-          </div>
-        </header>
-
+      <Header />
+      <div className="min-h-screen bg-gradient-to-b from-dark via-dark/95 to-background pt-16">
         <main className="container mx-auto px-4 py-16">
           {/* Hero Section */}
           <div className="text-center mb-16 animate-fade-in">

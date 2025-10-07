@@ -22,7 +22,7 @@ const BlagoCommunity = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section id="community" className="py-20 relative overflow-hidden">
       <div 
         className="absolute inset-0 opacity-20"
         style={{ backgroundImage: `url(${constellationBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
