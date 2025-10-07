@@ -7,7 +7,8 @@ const DownloadLinks = () => {
       name: "VPN для Windows",
       url: "https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.exe",
       icon: Monitor,
-      description: "Загрузите VPN для Windows и усильте свою безопасность во время работы, игр и трансляций на ПК. Пользуйтесь самым быстрым VPN-сервисом без ограничений по объемам данных и со стабильным соединением в любой точке мира."
+      description: "Загрузите VPN для Windows и усильте свою безопасность во время работы, игр и трансляций на ПК. Пользуйтесь самым быстрым VPN-сервисом без ограничений по объемам данных и со стабильным соединением в любой точке мира.",
+      guideUrl: "https://telegra.ph/Hiddify-dlya-Windows-prostoe-rukovodstvo-dlya-bezopasnosti-i-svobody-v-internete-09-22"
     },
     {
       name: "VPN для Mac",
@@ -83,9 +84,22 @@ const DownloadLinks = () => {
                         </h3>
                       </div>
                       {isExpanded && (
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {platform.description}
-                        </p>
+                        <>
+                          <p className="text-muted-foreground text-sm leading-relaxed">
+                            {platform.description}
+                          </p>
+                          {platform.guideUrl && (
+                            <a
+                              href={platform.guideUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block mt-3 text-sm text-primary hover:text-primary/80 transition-colors underline"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              📖 Руководство по безопасности в интернете
+                            </a>
+                          )}
+                        </>
                       )}
                     </a>
                   </div>
