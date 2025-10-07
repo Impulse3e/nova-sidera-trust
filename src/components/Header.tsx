@@ -26,7 +26,11 @@ const Header = () => {
         <div className={`flex items-center justify-between transition-all duration-500 ${
           isScrolled ? "h-14 px-4" : "h-16"
         }`}>
-          <Link to="/" className="flex items-center gap-2 text-xl font-bold text-foreground hover:opacity-80 transition-opacity">
+          <Link 
+            to="/" 
+            className="flex items-center gap-2 text-xl font-bold text-foreground hover:opacity-80 transition-opacity"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             Nova Sidera
           </Link>
 
