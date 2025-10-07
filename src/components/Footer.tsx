@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-foreground text-background py-12">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4">Nova Sidera</h3>
               <p className="text-sm text-background/70">
@@ -46,28 +46,15 @@ const Footer = () => {
                 <li>Email: support@novasidera.com</li>
               </ul>
             </div>
-          </div>
-          
-          <div className="border-t border-background/20 pt-8 mb-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-semibold mb-3 text-sm">Информация о продавце</h4>
-                <ul className="space-y-1 text-xs text-background/70">
-                  <li>Продавец: Medonetckaia Margarita</li>
-                  <li>Компания: SIRIUS BAR DOO, MONTENEGRO</li>
-                  <li>PIB: 03376214</li>
-                  <li>Datum registracije u CRPS: 10.08.2021 # 50979252</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-3 text-sm">Связь с продавцом</h4>
-                <ul className="space-y-1 text-xs text-background/70">
-                  <li>Телефон: +382068811850</li>
-                  <li>
-                    Email: <a href="mailto:info@investeya.online" className="hover:text-background transition-colors">info@investeya.online</a>
-                  </li>
-                </ul>
-              </div>
+            
+            <div>
+              <h4 className="font-semibold mb-4">Связь с продавцом</h4>
+              <ul className="space-y-2 text-sm text-background/70">
+                <li>Телефон: +382068811850</li>
+                <li>
+                  Email: <a href="mailto:info@investeya.online" className="hover:text-background transition-colors">info@investeya.online</a>
+                </li>
+              </ul>
             </div>
           </div>
           
