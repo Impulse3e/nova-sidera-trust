@@ -139,6 +139,17 @@ const Download = () => {
                           Скачать для {app.name}
                         </a>
                       </Button>
+                      
+                      {app.id === "windows" && (
+                        <a 
+                          href="https://telegra.ph/Hiddify-dlya-Windows-prostoe-rukovodstvo-dlya-bezopasnosti-i-svobody-v-internete-09-22"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-center mt-3 text-sm text-primary hover:text-primary/80 transition-colors"
+                        >
+                          📖 Руководство по установке
+                        </a>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
