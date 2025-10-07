@@ -68,7 +68,9 @@ const Pricing = () => {
                 )}
                 <CardHeader>
                   <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                  <CardDescription>{plan.audience}</CardDescription>
+                  <CardDescription className={plan.audience.includes('Скидка') ? 'text-destructive font-semibold' : ''}>
+                    {plan.audience}
+                  </CardDescription>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">{plan.price}</span>
                     {plan.period && <span className="text-muted-foreground ml-1">{plan.period}</span>}
@@ -79,7 +81,9 @@ const Pricing = () => {
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm">{feature}</span>
+                        <span className={`text-sm ${feature.includes('Экономия') ? 'text-destructive font-semibold' : ''}`}>
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
