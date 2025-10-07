@@ -69,7 +69,7 @@ const DownloadLinks = () => {
                 return (
                   <div 
                     key={platform.name} 
-                    className={`border-l-4 ${isExpanded ? 'border-primary' : 'border-border'} pl-6 transition-all`}
+                    className="border-l-4 border-border pl-6 transition-all hover:border-primary"
                   >
                     <a 
                       href={platform.url}
@@ -78,8 +78,8 @@ const DownloadLinks = () => {
                       className="group block"
                     >
                       <div className="flex items-start gap-3 mb-2">
-                        <Icon className={`w-5 h-5 mt-1 ${isExpanded ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
-                        <h3 className={`text-xl font-semibold ${isExpanded ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
+                        <Icon className="w-5 h-5 mt-1 text-muted-foreground group-hover:text-primary transition-colors" />
+                        <h3 className="text-xl font-semibold text-muted-foreground group-hover:text-foreground transition-colors">
                           {platform.name}
                         </h3>
                       </div>
