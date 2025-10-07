@@ -17,18 +17,23 @@ const Footer = () => {
               <h4 className="font-semibold mb-4">Документы</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="text-background/70 hover:text-background transition-colors">
+                  <a 
+                    href="https://drive.google.com/file/d/1tjuJLiJxCusXosTv1mY0Xu59dvtrKXpC/view?usp=sharing" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-background/70 hover:text-background transition-colors"
+                  >
                     Политика конфиденциальности
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-background/70 hover:text-background transition-colors">
-                    Пользовательское соглашение
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-background/70 hover:text-background transition-colors">
-                    Оферта
+                  <a 
+                    href="https://drive.google.com/file/d/1M6rBFweKfHhMyCKPpRFxrqJm6n1QqnBn/view?usp=sharing" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-background/70 hover:text-background transition-colors"
+                  >
+                    Публичная оферта
                   </a>
                 </li>
               </ul>
