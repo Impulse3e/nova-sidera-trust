@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const plans = [
@@ -87,8 +88,9 @@ const Pricing = () => {
                   <Button 
                     className="w-full" 
                     variant={plan.featured ? "default" : "outline"}
+                    asChild
                   >
-                    Выбрать тариф
+                    <Link to="/download">Выбрать тариф</Link>
                   </Button>
                 </CardFooter>
               </Card>

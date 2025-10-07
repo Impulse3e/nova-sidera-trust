@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen, Shield, Bot, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import constellationBg from "@/assets/constellation-bg.jpg";
 import web3Illustration from "@/assets/web3-illustration.jpg";
 
@@ -51,8 +52,8 @@ const BlagoCommunity = () => {
                 где токен DAR становится символом благодарности, а блокчейн ZHCHAIN — 
                 гарантом честности и свободы.
               </p>
-              <Button size="lg" className="text-base shadow-lg">
-                Войти в клуб
+              <Button size="lg" className="text-base shadow-lg" asChild>
+                <Link to="/download">Войти в клуб</Link>
               </Button>
             </div>
           </div>

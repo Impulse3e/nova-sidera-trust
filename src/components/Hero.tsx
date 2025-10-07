@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroIllustration from "@/assets/hero-illustration.jpg";
 
 const Hero = () => {
@@ -20,11 +21,11 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="text-base shadow-lg hover:shadow-xl transition-all">
-                Купить сейчас
+              <Button size="lg" className="text-base shadow-lg hover:shadow-xl transition-all" asChild>
+                <Link to="/download">Купить сейчас</Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-base">
-                7 дней — тест-доступ
+              <Button size="lg" variant="outline" className="text-base" asChild>
+                <Link to="/download">7 дней — тест-доступ</Link>
               </Button>
             </div>
             
