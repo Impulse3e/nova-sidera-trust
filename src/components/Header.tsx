@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out px-4">
       <div className={`container mx-auto transition-all duration-500 ease-in-out ${
-        isScrolled 
+        isScrolled && !mobileMenuOpen
           ? "mt-4 rounded-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/90 shadow-lg border border-border" 
           : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border"
       }`}>
