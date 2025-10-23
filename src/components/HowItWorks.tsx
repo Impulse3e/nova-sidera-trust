@@ -10,7 +10,7 @@ const HowItWorks = () => {
     {
       icon: Key,
       title: "Получение ключей",
-      description: "Генерация ключей автоматически и инструкции на email/Telegram"
+      description: "Генерация ключей автоматически и инструкции на Telegram"
     },
     {
       icon: Download,
@@ -60,7 +60,7 @@ const HowItWorks = () => {
           
           <div className="mt-16 p-6 bg-muted/50 rounded-lg border border-border">
             <p className="text-sm text-muted-foreground text-center">
-              💡 <span className="font-semibold text-foreground">Подсказка:</span> На странице оплаты укажите email/Telegram для автоматической доставки ключа
+              💡 <span className="font-semibold text-foreground">Подсказка:</span> На странице оплаты укажите Telegram для автоматической доставки ключа
             </p>
           </div>
         </div>
