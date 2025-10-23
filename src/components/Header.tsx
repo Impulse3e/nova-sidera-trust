@@ -55,7 +55,7 @@ const Header = () => {
               Вход
             </Button>
             <Button size="sm" asChild>
-              <Link to="/download">Купить SafeNet</Link>
+              <a href="/#pricing">Купить SafeNet</a>
             </Button>
           </div>
 
@@ -88,7 +88,7 @@ const Header = () => {
                 Вход
               </Button>
               <Button size="sm" asChild>
-                <Link to="/download">Купить SafeNet</Link>
+                <a href="/#pricing">Купить SafeNet</a>
               </Button>
             </div>
           </nav>

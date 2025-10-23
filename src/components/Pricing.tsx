@@ -10,6 +10,7 @@ const Pricing = () => {
       audience: "Базовый",
       price: "999 ₽",
       period: "/мес",
+      paymentUrl: "https://investeya.online/payment.php?amount=999",
       features: [
         "2 устройства",
         "Базовая поддержка",
@@ -23,6 +24,7 @@ const Pricing = () => {
       price: "1500 ₽",
       period: "за 3 месяца",
       featured: true,
+      paymentUrl: "https://investeya.online/payment.php?amount=1500",
       features: [
         "3 устройства",
         "Тех. сопровождение в чат-боте",
@@ -35,6 +37,7 @@ const Pricing = () => {
       audience: "Скидка 45%",
       price: "5400 ₽",
       period: "за год (450 ₽/мес)",
+      paymentUrl: "https://investeya.online/payment.php?amount=5400",
       features: [
         "4 устройства",
         "Тех. сопровождение в чат-боте",
@@ -94,7 +97,7 @@ const Pricing = () => {
                     variant={plan.featured ? "default" : "outline"}
                     asChild
                   >
-                    <Link to="/download">Выбрать тариф</Link>
+                    <a href={plan.paymentUrl} target="_blank" rel="noopener noreferrer">Выбрать тариф</a>
                   </Button>
                 </CardFooter>
               </Card>
