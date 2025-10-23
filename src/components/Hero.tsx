@@ -70,7 +70,7 @@ const Hero = () => {
                 </a>
                 {", "}
                 <a 
-                  href="https://play.google.com/store/apps/details?id=app.hiddify.com" 
+                  href="https://play.google.com/store/apps/details?id=com.v2raytun.android&pli=1" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-semibold text-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"

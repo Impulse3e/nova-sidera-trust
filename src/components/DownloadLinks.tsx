@@ -18,7 +18,7 @@ const DownloadLinks = () => {
     },
     {
       name: "VPN для Android",
-      url: "https://play.google.com/store/apps/details?id=app.hiddify.com",
+      url: "https://play.google.com/store/apps/details?id=com.v2raytun.android&pli=1",
       icon: Smartphone,
       description: "Скачайте VPN для Android и защитите свои данные на мобильном устройстве. Быстрое и стабильное соединение в любой точке мира."
     },

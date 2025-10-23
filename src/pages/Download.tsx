@@ -31,7 +31,7 @@ const Download = () => {
       version: "v2.1.0",
       requirements: "Android 8.0 или новее",
       image: androidApp,
-      downloadUrl: "https://play.google.com/store/apps/details?id=app.hiddify.com",
+      downloadUrl: "https://play.google.com/store/apps/details?id=com.v2raytun.android&pli=1",
       size: "38 МБ"
     },
     {
